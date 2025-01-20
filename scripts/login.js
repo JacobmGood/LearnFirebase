@@ -43,10 +43,10 @@ document.getElementById('Login-Button').addEventListener('click', async function
     // 6. Try and catch logic to create user with email and password
     try {
         // 6a. Use async/await to create user with email and password
-        await createUserWithEmailAndPassword(auth, email, password);
+        await signInWithEmailAndPassword(auth, email, password);
         // 8a. Display success message 
         successMessage.textContent = 'Login successful!';
-        errorMessage.textContent = '';
+        errorMessage.textContent = '';``
         //9b Redirect user to notes page
         window.location.href = 'index.html';
         //9c Store user email in local storage
